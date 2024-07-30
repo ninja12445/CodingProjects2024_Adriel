@@ -1,0 +1,28 @@
+/*
+Create a function that takes a number as an argument and returns the square root of that number cubed.
+
+Examples
+cubeSquareRoot (81) 729
+cubeSquareRoot (1646089) 2111932187
+cubeSquareRoot (695556) 580093704
+*/
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println(cubeSquareRoot(81));
+        System.out.println(cubeSquareRoot(1646089));
+        System.out.println(cubeSquareRoot(695556));
+    }
+    
+    public static int cubeSquareRoot(int num) {
+	    return (int) (Math.sqrt(num) * Math.sqrt(num) * Math.sqrt(num));
+    }
+  
+	
+}
+
+/* Output 
+729
+2111932187
+580093704
+*/
