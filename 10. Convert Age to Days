@@ -1,0 +1,29 @@
+/*
+Create a function that takes the age in years and returns the age in days.
+
+Examples
+calcAge(65) 23725
+calcAge(0) 0
+calcAge(20) 7300
+*/
+class HelloWorld {
+    public static void main(String[] args) {
+      
+        System.out.println(calcAge(65)); 
+        System.out.println(calcAge(0)); 
+        System.out.println(calcAge(20)); 
+       
+    }
+    
+    
+    public static int calcAge(int age) {
+		return age * 365;
+	}
+}
+
+/* Output 
+23725
+0
+7300
+
+*/
