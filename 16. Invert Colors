@@ -1,0 +1,40 @@
+/*
+Create a function that inverts the rgb values in an array.
+
+Examples
+invertColor([255, 255, 255]) [0, 0, 0]
+// [255, 255, 255] is the color white.
+// The opposite is [0, 0, 0], which is black.
+
+invertColor([12, 13, 200]) [243, 242, 55]
+
+invertColor([12, 17, 197]) [243, 238, 58]
+
+invertColor([243, 242, 235]) [12, 13, 20]
+
+invertColor([0, 0, 0])[255, 255, 255]
+
+invertColor([165, 170, 221]) [90, 85, 34]
+*/
+import java.util.Arrays;
+class HelloWorld {
+    public static void main(String[] args) {
+       int []list = {255, 255, 255};
+       System.out.print(Arrays.toString(invertColor(list)));
+
+       
+    }
+    
+    
+    public static int [] invertColor(int []rgb) {
+        int [] result = new int[rgb.length];
+        for (int i = 0; i < rgb.length; i++) {
+            result[i] = 255 - rgb[i];
+        }
+		return result;
+	}
+}
+
+/* Output 
+[0, 0, 0]
+*/
