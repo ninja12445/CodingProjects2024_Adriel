@@ -1,0 +1,27 @@
+/*
+Create a function that accepts a measurement value in inches and returns the equivalent of the measurement value in feet.
+
+Examples
+inches_to_feet(324) 27
+inches_to_feet(12) 1
+inches_to_feet(36) 3
+*/
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println(convert(324));
+        System.out.println(convert(12));
+        System.out.println(convert(36));
+    }
+    
+    public static int convert(int inches) {
+	    return inches / 12;
+	}
+}
+
+/* Output 
+27
+1
+3
+
+
+*/
