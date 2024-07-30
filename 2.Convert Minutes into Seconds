@@ -19,6 +19,7 @@ class HelloWorld {
         return minutes * 60;  
     }
 }
+
 /* Ouput 
 300
 180
