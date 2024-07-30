@@ -1,0 +1,26 @@
+/*
+Given an object containing counts of both upvotes and downvotes, return what vote count should be displayed. This is calculated by subtracting the number of downvotes from upvotes.
+
+Examples
+getVoteCount({ upvotes: 13, downvotes: 0 }) 13
+getVoteCount({ upvotes: 2, downvotes: 33 })  -31
+getVoteCount({ upvotes: 132, downvotes: 132 }) 0
+*/
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println(getVote(13, 0)); 
+        System.out.println(getVote(2, 33)); 
+        System.out.println(getVote(132, 132)); 
+    }
+    
+    
+    public static int getVote(int upvotes, int downvotes) {
+		return upvotes - downvotes;
+	}
+}
+
+/* Output 
+13
+-31
+0
+*/
