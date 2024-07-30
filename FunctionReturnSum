@@ -1,0 +1,23 @@
+/*
+Create a method that takes two integers as arguments and returns their sum.
+Examples:
+SumOfTwoNumbers(3, 2) 
+SumOfTwoNumbers(-3, -6) 
+SumOfTwoNumbers(7, 3) 
+
+output: 5
+output: -9
+output:  10
+*/
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println(sum(1, 4)); // expect: 5
+        System.out.println(sum(-12, 6)); // expect -6
+        System.out.println(sum(7, 35)); // expect 42
+    }
+    
+    
+    public static int sum(int a, int b) {
+        return a + b;  
+    }
+}
