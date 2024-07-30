@@ -10,9 +10,9 @@ addition(-3) -2
 */
 class HelloWorld {
     public static void main(String[] args) {
-        System.out.println(addition(0)); // expect: 5
-        System.out.println(addition(9)); // expect -6
-        System.out.println(addition(-3)); // expect 42
+        System.out.println(addition(0)); 
+        System.out.println(addition(9)); 
+        System.out.println(addition(-3)); 
     }
     
     
