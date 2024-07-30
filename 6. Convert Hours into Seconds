@@ -1,0 +1,26 @@
+/*
+Write a function that converts hours into seconds.
+
+Examples
+howManySeconds(2) 7200
+howManySeconds(10) 36000
+howManySeconds(24) 86400
+*/
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println(howManySeconds(2)); 
+        System.out.println(howManySeconds(10)); 
+        System.out.println(howManySeconds(24)); 
+    }
+    
+    
+    public static int howManySeconds(int hours) {
+	   return hours * 3600;
+    }
+}
+
+/* Output 
+7200
+36000
+86400
+*/
