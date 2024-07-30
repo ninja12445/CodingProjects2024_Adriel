@@ -1,0 +1,45 @@
+/*
+As you complete challenges on Edabit, you gain experience points depending on the level of difficulty of the challenge. The points for each level of difficulty are as follows:
+
+Difficulty	Experience Points
+Very Easy	5XP
+Easy	10XP
+Medium	20XP
+Hard	40XP
+Very Hard	80XP
+Given an array of how many challenges a person has completed per level of difficulty, return how many experience points they'll have.
+
+Examples
+getXP([89, 77, 30, 4, 1])  "2055XP"
+// Very Easy: 89 * 5 = 445
+// Easy: 77 * 10 = 770
+// Medium: 30 * 20 = 600
+// Hard: 4 * 40 = 160
+// Very Hard: 1 * 80 = 80
+// 445 + 770 + 600 + 160 + 80 = 2055
+
+getXP([254, 32, 65, 51, 34]) "7650XP"
+getXP([11, 0, 2, 0, 27]) "2255XP"
+*/
+class HelloWorld {
+    public static void main(String[] args) {
+        int [] c = {11, 0, 2, 0, 27};
+        System.out.print(getXP(c));
+    }
+    
+    public static String getXP(int[] c) {
+		int counter = 0;
+        for (int i = 0; i < c.length; i++) {
+            counter = c[0] * 5 + c[1] * 10 + c[2] * 20 + c[3] * 40+ c[4] * 80;
+        }
+        return (Integer.toString(counter) + "XP");
+	}	
+    
+}
+
+/* Output 
+2055XP
+7650XP
+2255XP
+
+*/
