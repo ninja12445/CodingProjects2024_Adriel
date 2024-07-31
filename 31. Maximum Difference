@@ -1,0 +1,40 @@
+/*
+Given an array of integers, return the difference between the largest and smallest integers in the array.
+
+Examples
+difference([10, 15, 20, 2, 10, 6]) 18
+# 20 - 2 = 18
+difference([-3, 4, -9, -1, -2, 15]) 24
+# 15 - (-9) = 24
+difference([4, 17, 12, 2, 10, 2]) 15
+*/
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int [] list = {4, 17, 12, 2, 10, 2};
+        int diff = difference(list);
+        System.out.println("The differences between the largest and smallest array is " + diff);
+    }
+    
+    public static int difference(int [] nums) {
+        int smallestNum = nums[0];
+        int largestNum = nums[0];
+        
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > largestNum) {
+                largestNum = nums[i];
+            } else if (nums[i] < smallestNum) {
+                smallestNum = nums[i];
+            }
+        }
+        return largestNum - smallestNum;
+    }
+    
+}
+
+/* Output 
+The differences between the largest and smallest array is 18
+The differences between the largest and smallest array is 24
+The differences between the largest and smallest array is 15
+
+*/
