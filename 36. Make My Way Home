@@ -1,0 +1,33 @@
+/*
+You will be given an array, showing how far James travels away from his home for each day. He may choose to travel towards or away from his house, so negative values are to be expected.
+
+Create a function that calculates what distance James must walk to get back home.
+
+Examples
+distanceHome([2, 4, 2, 5]) 13
+distanceHome([-1, -4, -3, -2])  10
+distanceHome([3, 4, -5, -2]) 0https://www.programiz.com/java-programming/online-compiler/assets/icons/play.svg
+*/
+import java.util.Arrays;
+class HelloWorld {
+    public static void main(String[] args) {
+        int [] list = {3, 4, -5, -2};
+        System.out.println(findDistance(list));
+    }
+    
+    public static int findDistance (int [] nums) {
+        int counter = 0;
+        for (int i = 0; i < nums.length; i++) {
+            counter += nums[i];
+        }
+        return Math.abs(counter);
+    }
+    
+}
+
+/* Output 
+10
+13
+0
+
+*/
