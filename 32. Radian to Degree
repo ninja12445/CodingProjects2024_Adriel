@@ -1,0 +1,31 @@
+/* 
+Create a function that takes an angle in radians and converts it into degrees.
+
+Examples
+toDegree(Math.PI) 180.0
+toDegree(Math.PI/2) 90.0
+toDegree(Math.PI/4) 45.0
+*/
+
+class HelloWorld {
+    public static void main(String[] args) {
+       System.out.println(toDegree(Math.PI));
+       System.out.println(toDegree(Math.PI/2));
+       System.out.println(toDegree(Math.PI/4));
+       
+    }
+    
+    public static double toDegree(double num) {
+        double convert = num * (180 / Math.PI);
+        return convert;
+	}
+    
+    
+}
+
+/* Output 
+180.0
+90.0
+45.0
+
+*/
