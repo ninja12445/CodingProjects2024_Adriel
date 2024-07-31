@@ -6,7 +6,7 @@ Create a function that calculates what distance James must walk to get back home
 Examples
 distanceHome([2, 4, 2, 5]) 13
 distanceHome([-1, -4, -3, -2])  10
-distanceHome([3, 4, -5, -2]) 0https://www.programiz.com/java-programming/online-compiler/assets/icons/play.svg
+distanceHome([3, 4, -5, -2]) 0
 */
 import java.util.Arrays;
 class HelloWorld {
